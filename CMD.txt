@@ -1,0 +1,13 @@
+#
+# how to create to settings SECRET_KEY 
+#
+
+Method 1 >>
+    python3 manage.py shell
+    from django.core.management.utils import get_random_secret_key
+    print(get_random_secret_key())
+
+Method 2 >> in .env
+    SECRET_KEY=vq)m)f7aq3upbc)4r6w+vvjzk=f-9i*1!3^2@)(*5jw8mm$*yo
+    DEBUG=False
+
