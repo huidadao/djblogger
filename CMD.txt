@@ -11,3 +11,16 @@ Method 2 >> in .env
     SECRET_KEY=vq)m)f7aq3upbc)4r6w+vvjzk=f-9i*1!3^2@)(*5jw8mm$*yo
     DEBUG=False
 
+#
+# PIP command
+#
+
+pip3 freeze > requirements.txt
+
+pip3 install -r requirements.txt
+
+
+#
+# pytest command
+#
+pytest -cov-report=html --cov=./
